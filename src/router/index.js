@@ -1,15 +1,18 @@
 import Vue from 'vue'
-import Router from 'vue-router'
+import VueRouter from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
+import RethinkDB from '@/components/RethinkDB'
+//import Router from './apiRoutes.js'
 
-Vue.use(Router)
+Vue.use(VueRouter)
 
-export default new Router({
+export default new VueRouter({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      name: 'RethinkDB',
+      component: RethinkDB
     }
-  ]
+  ],
+	mode: 'history'
 })
